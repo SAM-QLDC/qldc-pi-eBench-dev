@@ -1,0 +1,897 @@
+#! <?xml version="1.0" encoding="UTF-8" ?>
+#! <WORKSPACE
+#    Command-line to run this workspace:
+#        "C:\Program Files\FME2020\fme.exe" "D:\FME\eBench\eBench C data.fmw"
+#              --SourceDataset_REDSHIFT_3 "AmazonRedshiftDW"
+#    
+#!   ARCGIS_COMPATIBILITY="ARCGIS_AUTO"
+#!   ATTR_TYPE_ENCODING="SDF"
+#!   BEGIN_PYTHON=""
+#!   BEGIN_TCL=""
+#!   CATEGORY=""
+#!   DESCRIPTION=""
+#!   DESTINATION="NONE"
+#!   DESTINATION_ROUTING_FILE=""
+#!   DOC_EXTENTS="3063.4 791.63"
+#!   DOC_TOP_LEFT="-235.501 -788.505"
+#!   END_PYTHON=""
+#!   END_TCL=""
+#!   EXPLICIT_BOOKMARK_ORDER="false"
+#!   FME_BUILD_NUM="21313"
+#!   FME_DOCUMENT_GUID="7a969c29-f564-4bf9-afb5-edb46de290c4"
+#!   FME_DOCUMENT_PRIORGUID="e64ebb3e-9a5b-44da-9b8b-9b60f08b3d65,adf60c16-9bf7-4aa5-9033-44f08507475f"
+#!   FME_GEOMETRY_HANDLING="Enhanced"
+#!   FME_IMPLICIT_CSMAP_REPROJECTION_MODE="Auto"
+#!   FME_NAMES_ENCODING="windows-1252"
+#!   FME_REPROJECTION_ENGINE="FME"
+#!   FME_SERVER_SERVICES=""
+#!   FME_STROKE_MAX_DEVIATION="0"
+#!   HISTORY=""
+#!   IGNORE_READER_FAILURE="No"
+#!   LAST_SAVE_BUILD="FME(R) 2021.0.1.0 (20210404 - Build 21313 - WIN64)"
+#!   LAST_SAVE_DATE="2021-10-12T14:44:05"
+#!   LOG_FILE=""
+#!   LOG_MAX_RECORDED_FEATURES="200"
+#!   MARKDOWN_DESCRIPTION=""
+#!   MARKDOWN_USAGE=""
+#!   MAX_LOG_FEATURES="200"
+#!   MULTI_WRITER_DATASET_ORDER="BY_ID"
+#!   PASSWORD=""
+#!   PYTHON_COMPATIBILITY="38"
+#!   REDIRECT_TERMINATORS="NONE"
+#!   SAVE_ON_PROMPT_AND_RUN="Yes"
+#!   SHOW_ANNOTATIONS="true"
+#!   SHOW_INFO_NODES="true"
+#!   SOURCE="NONE"
+#!   SOURCE_ROUTING_FILE=""
+#!   TERMINATE_REJECTED="YES"
+#!   TITLE=""
+#!   USAGE=""
+#!   USE_MARKDOWN=""
+#!   VIEW_POSITION="-1467.51 187.502"
+#!   WARN_INVALID_XFORM_PARAM="Yes"
+#!   WORKSPACE_VERSION="1"
+#!   ZOOM_SCALE="100"
+#! >
+#! <DATASETS>
+#! <DATASET
+#!   IS_SOURCE="true"
+#!   ROLE="READER"
+#!   FORMAT="REDSHIFT"
+#!   DATASET="$(SourceDataset_REDSHIFT_3)"
+#!   KEYWORD="REDSHIFT_1"
+#!   MULTI_GEOM_ALLOWED="false"
+#!   ATTR_MAX_LENGTH="0"
+#!   ATTR_CASE="ANY"
+#!   ALLOWED_FEAT_TYPES=""
+#!   WRITE_DEFS="true"
+#!   DEFLINE_TEMPLATE="redshift_type {FME_GEN_GEOMETRY} redshift_sql_where_clause &quot;&quot; redshift_sql_statement &quot;&quot;"
+#!   DEFLINE_ATTRS="true"
+#!   EXPOSABLE_ATTRS="fme_basename char(50) fme_color char(50) fme_dataset char(50) fme_feature_type char(50) fme_fill_color char(50) fme_geometry char(50) fme_primary_axis float8 fme_rotation float8 fme_secondary_axis float8 fme_start_angle float8 fme_sweep_angle float8 fme_text_size float8 fme_text_string char(50) fme_type char(50) multi_reader_full_id int4 multi_reader_id int4 multi_reader_keyword char(50) multi_reader_type char(50) redshift_type char(50)"
+#!   DEFLINE_PARMS="&quot;GUI OPTIONAL NAMEDGROUP redshift_query_settings_group redshift_sql_where_clause%redshift_sql_statement Table&quot; &quot;&quot; &quot;GUI OPTIONAL TEXT_EDIT_SQL_CFG redshift_sql_where_clause MODE,WHERE WHERE Clause&quot; &quot;&quot; &quot;GUI OPTIONAL TEXT_EDIT_SQL_CFG redshift_sql_statement MODE,SQL SELECT Statement&quot; &quot;&quot; "
+#!   ATTR_INDEX_TYPES=""
+#!   ATTR_NAME_INVALID_CHARS=""
+#!   SUPPORTS_FEATURE_TYPE_FANOUT="true"
+#!   ENABLED="true"
+#!   DYNAMIC_FEATURE_TYPES_LIST_ON_MERGE="true"
+#!   DATASET_TYPE="DATABASE"
+#!   FTTR_TYPE="LISTBOX_ENCODED"
+#!   GENERATE_FME_BUILD_NUM="21313"
+#!   COORDSYS=""
+#!   FEATURE_TYPES=""
+#!   MAX_FEATURES=""
+#!   MAX_FEATURES_PER_FEATURE_TYPE=""
+#!   MIN_FEATURES=""
+#!   START_FEATURE=""
+#! >
+#! <METAFILE_PARAMETER
+#!   NAME="ADVANCED_PARMS"
+#!   VALUE="REDSHIFT_IN_FEATURES_PER_FETCH REDSHIFT_OUT_TRANSACTION_INTERVAL"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="ATTRIBUTE_READING"
+#!   VALUE="DEFLINE_ATTRS"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="ATTRIBUTE_READING_HISTORIC"
+#!   VALUE="ALL"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="DATASET_NAME"
+#!   VALUE="Database"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="FEATURE_TYPE_DEFAULT_NAME"
+#!   VALUE="Table1"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="FEATURE_TYPE_NAME"
+#!   VALUE="Table"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="NETWORK_AUTHENTICATION"
+#!   VALUE="NO"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="NETWORK_PROXY"
+#!   VALUE="NO"
+#! />
+#! </DATASET>
+#! </DATASETS>
+#! <DATA_TYPES>
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="bool"
+#!   FME_TYPE="fme_boolean"
+#!   FORMAT="REDSHIFT"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="char(width)"
+#!   FME_TYPE="fme_char(width)"
+#!   FORMAT="REDSHIFT"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="char(width)"
+#!   FME_TYPE="fme_binary(width)"
+#!   FORMAT="REDSHIFT"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="varchar(width)"
+#!   FME_TYPE="fme_varchar(width)"
+#!   FORMAT="REDSHIFT"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="varchar(width)"
+#!   FME_TYPE="fme_varbinary(width)"
+#!   FORMAT="REDSHIFT"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="varchar(255)"
+#!   FME_TYPE="fme_buffer"
+#!   FORMAT="REDSHIFT"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="varchar(255)"
+#!   FME_TYPE="fme_binarybuffer"
+#!   FORMAT="REDSHIFT"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="varchar(255)"
+#!   FME_TYPE="fme_xml"
+#!   FORMAT="REDSHIFT"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="varchar(255)"
+#!   FME_TYPE="fme_json"
+#!   FORMAT="REDSHIFT"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="int2"
+#!   FME_TYPE="fme_int16"
+#!   FORMAT="REDSHIFT"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="int2"
+#!   FME_TYPE="fme_int8"
+#!   FORMAT="REDSHIFT"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="int2"
+#!   FME_TYPE="fme_uint8"
+#!   FORMAT="REDSHIFT"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="int4"
+#!   FME_TYPE="fme_int32"
+#!   FORMAT="REDSHIFT"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="int4"
+#!   FME_TYPE="fme_uint16"
+#!   FORMAT="REDSHIFT"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="int8"
+#!   FME_TYPE="fme_int64"
+#!   FORMAT="REDSHIFT"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="int8"
+#!   FME_TYPE="fme_uint32"
+#!   FORMAT="REDSHIFT"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="varchar(20)"
+#!   FME_TYPE="fme_uint64"
+#!   FORMAT="REDSHIFT"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="float4"
+#!   FME_TYPE="fme_real32"
+#!   FORMAT="REDSHIFT"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="float8"
+#!   FME_TYPE="fme_real64"
+#!   FORMAT="REDSHIFT"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="numeric(width,decimal)"
+#!   FME_TYPE="fme_decimal(width,decimal)"
+#!   FORMAT="REDSHIFT"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="date"
+#!   FME_TYPE="fme_date"
+#!   FORMAT="REDSHIFT"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="timestamp"
+#!   FME_TYPE="fme_datetime"
+#!   FORMAT="REDSHIFT"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="timestamptz"
+#!   FME_TYPE="fme_datetime"
+#!   FORMAT="REDSHIFT"
+#! />
+#! </DATA_TYPES>
+#! <GEOM_TYPES>
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="redshift_none"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="REDSHIFT"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="redshift_none"
+#!   FME_TYPE="fme_point"
+#!   FORMAT="REDSHIFT"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="redshift_none"
+#!   FME_TYPE="fme_line"
+#!   FORMAT="REDSHIFT"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="redshift_none"
+#!   FME_TYPE="fme_area"
+#!   FORMAT="REDSHIFT"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="redshift_none"
+#!   FME_TYPE="fme_rectangle"
+#!   FORMAT="REDSHIFT"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="redshift_none"
+#!   FME_TYPE="fme_rounded_rectangle"
+#!   FORMAT="REDSHIFT"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="redshift_none"
+#!   FME_TYPE="fme_text"
+#!   FORMAT="REDSHIFT"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="redshift_none"
+#!   FME_TYPE="fme_ellipse"
+#!   FORMAT="REDSHIFT"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="redshift_none"
+#!   FME_TYPE="fme_arc"
+#!   FORMAT="REDSHIFT"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="redshift_none"
+#!   FME_TYPE="fme_collection"
+#!   FORMAT="REDSHIFT"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="redshift_none"
+#!   FME_TYPE="fme_raster"
+#!   FORMAT="REDSHIFT"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="redshift_none"
+#!   FME_TYPE="fme_surface"
+#!   FORMAT="REDSHIFT"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="redshift_none"
+#!   FME_TYPE="fme_solid"
+#!   FORMAT="REDSHIFT"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="redshift_none"
+#!   FME_TYPE="fme_point_cloud"
+#!   FORMAT="REDSHIFT"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="redshift_none"
+#!   FME_TYPE="fme_voxel_grid"
+#!   FORMAT="REDSHIFT"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="redshift_none"
+#!   FME_TYPE="fme_feature_table"
+#!   FORMAT="REDSHIFT"
+#! />
+#! </GEOM_TYPES>
+#! <FEATURE_TYPES>
+#! <FEATURE_TYPE
+#!   IS_SOURCE="true"
+#!   NODE_NAME="eb_assets"
+#!   FEATURE_TYPE_NAME=""
+#!   FEATURE_TYPE_NAME_QUALIFIER="public"
+#!   IS_EDITABLE="false"
+#!   IDENTIFIER="7"
+#!   FEAT_GEOMTYPE="redshift_none"
+#!   POSITION="-87.750187501874962 -106.87496874968707"
+#!   BOUNDING_RECT="-87.750187501874962 -106.87496874968707 515.00106825772946 71"
+#!   ORDER="500000000000000"
+#!   COLLAPSED="true"
+#!   KEYWORD="REDSHIFT_1"
+#!   PARMS_EDITED="false"
+#!   ENABLED="true"
+#!   HIDDEN_USER_ATTRS=""
+#!   READ_SELECT_ATTRS="true"
+#!   MERGE_FILTER=""
+#!   MERGE_FILTER_TYPE="FILTER_TYPE_GLOB"
+#!   MERGE_FILTER_CASE_SENSITIVE="true"
+#!   DYNAMIC_SCHEMA="false"
+#! >
+#!     <FEAT_ATTRIBUTE ATTR_NAME="id" ATTR_TYPE="int8" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="siteid" ATTR_TYPE="int8" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="org_id" ATTR_TYPE="int8" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="name" ATTR_TYPE="varchar(200)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="collection" ATTR_TYPE="varchar(200)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="level" ATTR_TYPE="varchar(200)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="type" ATTR_TYPE="varchar(200)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="energy" ATTR_TYPE="varchar(200)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="unit" ATTR_TYPE="varchar(200)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="stdunit" ATTR_TYPE="varchar(200)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="sitename" ATTR_TYPE="varchar(200)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="closed" ATTR_TYPE="varchar(200)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="alerts" ATTR_TYPE="int4" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="assetyype" ATTR_TYPE="varchar(200)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="redshift_query_settings_group" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="redshift_sql_statement" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="redshift_sql_where_clause" PARM_VALUE=""/>
+#! </FEATURE_TYPE>
+#! <FEATURE_TYPE
+#!   IS_SOURCE="true"
+#!   NODE_NAME="eb_sites"
+#!   FEATURE_TYPE_NAME=""
+#!   FEATURE_TYPE_NAME_QUALIFIER="public"
+#!   IS_EDITABLE="false"
+#!   IDENTIFIER="10"
+#!   FEAT_GEOMTYPE="redshift_none"
+#!   POSITION="-57.750187501874962 -295.74668746687485"
+#!   BOUNDING_RECT="-57.750187501874962 -295.74668746687485 485.00106825772946 71"
+#!   ORDER="500000000000000"
+#!   COLLAPSED="true"
+#!   KEYWORD="REDSHIFT_1"
+#!   PARMS_EDITED="false"
+#!   ENABLED="true"
+#!   HIDDEN_USER_ATTRS=""
+#!   READ_SELECT_ATTRS="true"
+#!   MERGE_FILTER=""
+#!   MERGE_FILTER_TYPE="FILTER_TYPE_GLOB"
+#!   MERGE_FILTER_CASE_SENSITIVE="true"
+#!   DYNAMIC_SCHEMA="false"
+#! >
+#!     <FEAT_ATTRIBUTE ATTR_NAME="id" ATTR_TYPE="varchar(200)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="name" ATTR_TYPE="varchar(200)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="entities" ATTR_TYPE="varchar(200)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="meter" ATTR_TYPE="varchar(200)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="alerts" ATTR_TYPE="varchar(200)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="redshift_query_settings_group" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="redshift_sql_statement" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="redshift_sql_where_clause" PARM_VALUE=""/>
+#! </FEATURE_TYPE>
+#! <FEATURE_TYPE
+#!   IS_SOURCE="true"
+#!   NODE_NAME="eb_tsdata"
+#!   FEATURE_TYPE_NAME=""
+#!   FEATURE_TYPE_NAME_QUALIFIER="public"
+#!   IS_EDITABLE="false"
+#!   IDENTIFIER="11"
+#!   FEAT_GEOMTYPE="redshift_none"
+#!   POSITION="-84.750187501874962 -473.7469374693751"
+#!   BOUNDING_RECT="-84.750187501874962 -473.7469374693751 512.00106825772946 71"
+#!   ORDER="500000000000000"
+#!   COLLAPSED="true"
+#!   KEYWORD="REDSHIFT_1"
+#!   PARMS_EDITED="false"
+#!   ENABLED="true"
+#!   HIDDEN_USER_ATTRS=""
+#!   READ_SELECT_ATTRS="true"
+#!   MERGE_FILTER=""
+#!   MERGE_FILTER_TYPE="FILTER_TYPE_GLOB"
+#!   MERGE_FILTER_CASE_SENSITIVE="true"
+#!   DYNAMIC_SCHEMA="false"
+#! >
+#!     <FEAT_ATTRIBUTE ATTR_NAME="siteid" ATTR_TYPE="int8" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="name" ATTR_TYPE="varchar(200)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="datetime" ATTR_TYPE="timestamp" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="value" ATTR_TYPE="float8" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="redshift_query_settings_group" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="redshift_sql_statement" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="redshift_sql_where_clause" PARM_VALUE=""/>
+#! </FEATURE_TYPE>
+#! </FEATURE_TYPES>
+#! <FMESERVER>
+#! <CONNECTIONS>
+#! <CONNECTION
+#!   NAME="AmazonRedshiftDW"
+#!   TYPE="DATABASE"
+#!   FAMILY="Redshift"
+#!   USAGE="PUBLISHED"
+#! />
+#! </CONNECTIONS>
+#! </FMESERVER>
+#! <GLOBAL_PARAMETERS>
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI NAMED_DB_CONNECTION_ENCODED SourceDataset_REDSHIFT_3 FMT:REDSHIFT%FAMILY:Redshift Connection:"
+#!   DEFAULT_VALUE="AmazonRedshiftDW"
+#!   IS_STAND_ALONE="false"
+#! />
+#! </GLOBAL_PARAMETERS>
+#! <USER_PARAMETERS
+#!   FORM="eyJwYXJhbWV0ZXJzIjpbeyJjaG9pY2VTZXR0aW5ncyI6eyJjaG9pY2VTZXQiOiJkYkNvbm5lY3Rpb25zIiwiZm9ybWF0IjoiUkVEU0hJRlQifSwiZGVmYXVsdFZhbHVlIjoiQW1hem9uUmVkc2hpZnREVyIsIm5hbWUiOiJTb3VyY2VEYXRhc2V0X1JFRFNISUZUXzMiLCJwcm9tcHQiOiJDb25uZWN0aW9uOiIsInJlcXVpcmVkIjp0cnVlLCJ0eXBlIjoiZHJvcGRvd24iLCJ2YWx1ZVR5cGUiOiJzdHJpbmdFbmNvZGVkIn1dfQ=="
+#! >
+#! <PARAMETER_INFO>
+#!     <INFO NAME="SourceDataset_REDSHIFT_3" IS_STAND_ALONE="false" />
+#! </PARAMETER_INFO>
+#! </USER_PARAMETERS>
+#! <COMMENTS>
+#! <COMMENT
+#!   IDENTIFIER="15"
+#!   COMMENT_VALUE="&lt;b&gt;Tester&amp;nbsp;[Tester]&lt;/b&gt;&lt;br&gt;Test&amp;nbsp;Clauses:&lt;table border=0 cellspacing=0&gt;&lt;tr&gt;&lt;td valign=middle&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/td&gt;&lt;td&gt;&lt;table border=1 cellspacing=0 cellpadding=2&gt;&lt;tr&gt;&lt;td&gt;Left&amp;nbsp;Value&lt;/td&gt;&lt;td&gt;Operator&lt;/td&gt;&lt;td&gt;Right&amp;nbsp;Value&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;@Value(siteid)&lt;/td&gt;&lt;td&gt;=&lt;/td&gt;&lt;td&gt;11865&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;Advanced:&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Preserve&amp;nbsp;Feature&amp;nbsp;Order:&amp;nbsp;Per&amp;nbsp;Output&amp;nbsp;Port"
+#!   POSITION="1949.7659376593765 -106.87496874968707"
+#!   TOP_LEFT="1949.7659376593765 -106.87496874968707"
+#!   BOTTOM_RIGHT="2734.7732877328772 -105.87496874968707"
+#!   BOUNDING_RECT="1949.7659376593765 -106.87496874968707 785.00735007350067 -1"
+#!   ORDER="500000000000005"
+#!   FOLLOW_ANCHOR="true"
+#!   INFO_NODE="true"
+#!   CUSTOM_USER_COLOR="false"
+#!   ANCHORED_NODE="5"
+#! />
+#! </COMMENTS>
+#! <CONSTANTS>
+#! </CONSTANTS>
+#! <BOOKMARKS>
+#! <BOOKMARK
+#!   IDENTIFIER="6"
+#!   NAME="New Bookmark"
+#!   DESCRIPTION=""
+#!   TOP_LEFT="-235.50087500874997 3.1250312503124746"
+#!   ORDER="500000000000001"
+#!   PALETTE_COLOR="Color7"
+#!   BOTTOM_RIGHT="800.00800008000078 -665.63165631656375"
+#!   BOUNDING_RECT="-235.50087500874997 3.1250312503124746 1035.5088750887508 668.75668756687617"
+#!   STICKY="true"
+#!   COLOUR="0.59215686274509804,0.75294117647058822,0.90980392156862744,1"
+#!   CONTENTS="17 11 18 10 7 "
+#! >
+#! </BOOKMARK>
+#! <BOOKMARK
+#!   IDENTIFIER="16"
+#!   NAME="New Bookmark"
+#!   DESCRIPTION=""
+#!   TOP_LEFT="928.13428134281344 3.1250312503124746"
+#!   ORDER="500000000000006"
+#!   PALETTE_COLOR="Color8"
+#!   BOTTOM_RIGHT="2827.8987189871905 -788.50512505125062"
+#!   BOUNDING_RECT="928.13428134281344 3.1250312503124746 1899.7644376443773 791.63015630156315"
+#!   STICKY="true"
+#!   COLOUR="0.62352941176470589,0.5725490196078431,0.8784313725490196,1"
+#!   CONTENTS="19 15 13 20 12 14 9 5 "
+#! >
+#! </BOOKMARK>
+#! </BOOKMARKS>
+#! <TRANSFORMERS>
+#! <TRANSFORMER
+#!   IDENTIFIER="5"
+#!   TYPE="Tester"
+#!   VERSION="3"
+#!   POSITION="1256.508625086251 -106.87496874968707"
+#!   BOUNDING_RECT="1256.508625086251 -106.87496874968707 440.62940629406285 71"
+#!   ORDER="500000000000002"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="21313"
+#! >
+#!     <OUTPUT_FEAT NAME="PASSED"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="siteid" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="name" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="datetime" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="value" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <OUTPUT_FEAT NAME="FAILED"/>
+#!     <FEAT_COLLAPSED COLLAPSED="1"/>
+#!     <XFORM_ATTR ATTR_NAME="siteid" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="name" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="datetime" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="value" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_PARM PARM_NAME="ADVANCED_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="BOOL_OP" PARM_VALUE="OR"/>
+#!     <XFORM_PARM PARM_NAME="COMPOSITE_MSG" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="COMPOSITE_TEST" PARM_VALUE="1"/>
+#!     <XFORM_PARM PARM_NAME="PRESERVE_FEATURE_ORDER" PARM_VALUE="Per Output Port"/>
+#!     <XFORM_PARM PARM_NAME="TEST_CLAUSE" PARM_VALUE="TEST &lt;at&gt;Value&lt;openparen&gt;siteid&lt;closeparen&gt; = 11865"/>
+#!     <XFORM_PARM PARM_NAME="TEST_CLAUSE_GRP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="TEST_MODE" PARM_VALUE="TEST"/>
+#!     <XFORM_PARM PARM_NAME="TEST_PREVIEW_GROUP" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="Tester"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="9"
+#!   TYPE="Sorter"
+#!   VERSION="3"
+#!   POSITION="1243.1380313803138 -391.2528125281255"
+#!   BOUNDING_RECT="1243.1380313803138 -391.2528125281255 454 71"
+#!   ORDER="500000000000003"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="21313"
+#! >
+#!     <OUTPUT_FEAT NAME="SORTED"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="siteid" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="name" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="datetime" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="value" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="GROUP_BY" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="GROUP_BY_MODE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="GROUP_PROCESSING_GROUP" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="SORT_GRP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="SORT_PARM" PARM_VALUE="datetime NUMERIC ASCENDING"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="Sorter"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="13"
+#!   TYPE="ChartGenerator"
+#!   VERSION="1"
+#!   POSITION="1243.1380313803138 -622.50512505125107"
+#!   BOUNDING_RECT="1243.1380313803138 -622.50512505125107 454 71"
+#!   ORDER="500000000000004"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="21313"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_PARM PARM_NAME="AXES_FONT" PARM_VALUE="Arial&lt;comma&gt;12"/>
+#!     <XFORM_PARM PARM_NAME="AXES_LW" PARM_VALUE="0.5"/>
+#!     <XFORM_PARM PARM_NAME="AXES_OPTIONS" PARM_VALUE="FME_DISCLOSURE_CLOSED"/>
+#!     <XFORM_PARM PARM_NAME="BACKGROUND_COLOR" PARM_VALUE="1&lt;comma&gt;1&lt;comma&gt;1"/>
+#!     <XFORM_PARM PARM_NAME="CHART_SETUP" PARM_VALUE="DATAATT;value;LABATT;datetime;COLOR;0,0,1;BAR_ORIENTATION;V;BAR_STACKING;NO;BAR_WIDTH;1.0;FME_CONTROLLER_QUERY_FILE;transformers&lt;solidus&gt;dependencies&lt;solidus&gt;charter&lt;solidus&gt;Bar.fme;FME_CONTROLLER_CHOICE;Bar"/>
+#!     <XFORM_PARM PARM_NAME="CHART_TITLE" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="CHART_TYPE" PARM_VALUE="Bar"/>
+#!     <XFORM_PARM PARM_NAME="DATA_PARAMETERS_GROUP" PARM_VALUE="FME_DISCLOSURE_OPEN"/>
+#!     <XFORM_PARM PARM_NAME="DATA_SERIES" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="DPI" PARM_VALUE="300"/>
+#!     <XFORM_PARM PARM_NAME="GENERAL_OPTIONS" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="GROUP_BY" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="GROUP_BY_MODE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="GROUP_PROCESSING_GROUP" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="HIDDENGROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="INTERPRETATION" PARM_VALUE="RGBA32"/>
+#!     <XFORM_PARM PARM_NAME="LEGEND" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="LEGEND_FONT" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="LEGEND_OPTIONS" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="MULTI_DS" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="OUTPUT_OPTIONS" PARM_VALUE="FME_DISCLOSURE_CLOSED"/>
+#!     <XFORM_PARM PARM_NAME="STYLE_GROUP" PARM_VALUE="FME_DISCLOSURE_CLOSED"/>
+#!     <XFORM_PARM PARM_NAME="TICKS" PARM_VALUE="T"/>
+#!     <XFORM_PARM PARM_NAME="TICK_FONT" PARM_VALUE="Arial&lt;comma&gt;10"/>
+#!     <XFORM_PARM PARM_NAME="TITLE_FONT" PARM_VALUE="Arial&lt;comma&gt;12"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XAXES_OPTIONS" PARM_VALUE="FME_DISCLOSURE_CLOSED"/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="ChartGenerator"/>
+#!     <XFORM_PARM PARM_NAME="XTICK_INTERVAL" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="X_INCH" PARM_VALUE="2.0"/>
+#!     <XFORM_PARM PARM_NAME="X_LABEL" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="X_LABEL_ANGLE" PARM_VALUE="Horizontal&lt;space&gt;&lt;openparen&gt;0&lt;closeparen&gt;"/>
+#!     <XFORM_PARM PARM_NAME="X_LOG" PARM_VALUE="LIN"/>
+#!     <XFORM_PARM PARM_NAME="X_MAX" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="X_MIN" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="YAXES_OPTIONS" PARM_VALUE="FME_DISCLOSURE_CLOSED"/>
+#!     <XFORM_PARM PARM_NAME="YTICK_INTERVAL" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="Y_INCH" PARM_VALUE="2.0"/>
+#!     <XFORM_PARM PARM_NAME="Y_LABEL" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="Y_LABEL_ANGLE" PARM_VALUE="Horizontal&lt;space&gt;&lt;openparen&gt;0&lt;closeparen&gt;"/>
+#!     <XFORM_PARM PARM_NAME="Y_LOG" PARM_VALUE="LIN"/>
+#!     <XFORM_PARM PARM_NAME="Y_MAX" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="Y_MIN" PARM_VALUE=""/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="17"
+#!   TYPE="Junction"
+#!   VERSION="0"
+#!   POSITION="663.87648701191699 -483.7469374693751"
+#!   BOUNDING_RECT="663.87648701191699 -483.7469374693751 61 61"
+#!   ORDER="500000000000007"
+#!   PARMS_EDITED="false"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="21313"
+#! >
+#!     <OUTPUT_FEAT NAME="Output"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="siteid" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="name" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="datetime" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="value" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="Junction"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="19"
+#!   TYPE="Junction"
+#!   VERSION="0"
+#!   POSITION="1019.508625086251 -116.87496874968707"
+#!   BOUNDING_RECT="1019.508625086251 -116.87496874968707 61 61"
+#!   ORDER="500000000000008"
+#!   PARMS_EDITED="false"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="21313"
+#! >
+#!     <OUTPUT_FEAT NAME="Output"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="siteid" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="name" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="datetime" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="value" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="Junction_2"/>
+#! </TRANSFORMER>
+#! </TRANSFORMERS>
+#! <FEAT_LINKS>
+#! <FEAT_LINK
+#!   IDENTIFIER="18"
+#!   SOURCE_NODE="11"
+#!   TARGET_NODE="17"
+#!   SOURCE_PORT_DESC="-1"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="12"
+#!   SOURCE_NODE="5"
+#!   TARGET_NODE="9"
+#!   SOURCE_PORT_DESC="fo 0 PASSED"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="14"
+#!   SOURCE_NODE="9"
+#!   TARGET_NODE="13"
+#!   SOURCE_PORT_DESC="fo 0 SORTED"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="21"
+#!   SOURCE_NODE="17"
+#!   TARGET_NODE="19"
+#!   SOURCE_PORT_DESC="fo 0 Output"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="true"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="20"
+#!   SOURCE_NODE="19"
+#!   TARGET_NODE="5"
+#!   SOURCE_PORT_DESC="fo 0 Output"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! </FEAT_LINKS>
+#! <BREAKPOINTS>
+#! </BREAKPOINTS>
+#! <ATTR_LINKS>
+#! </ATTR_LINKS>
+#! <SUBDOCUMENTS>
+#! </SUBDOCUMENTS>
+#! <LOOKUP_TABLES>
+#! </LOOKUP_TABLES>
+#! </WORKSPACE>
+
+FME_PYTHON_VERSION 38
+ARCGIS_COMPATIBILITY ARCGIS_AUTO
+GUI IGNORE SourceDataset_REDSHIFT_1,REDSHIFT_IN_FME_CONNECTION_GROUP_REDSHIFT_1,REDSHIFT_IN_ADVANCED_REDSHIFT_1,REDSHIFT_IN_FEATURES_PER_FETCH_REDSHIFT_1,REDSHIFT_IN_SCHEMAS_FOR_TABLE_LISTING_REDSHIFT_1
+# ============================================================================
+DEFAULT_MACRO SourceDataset_REDSHIFT_3 AmazonRedshiftDW
+# ============================================================================
+GUI NAMED_DB_CONNECTION_ENCODED SourceDataset_REDSHIFT_3 FMT:REDSHIFT%FAMILY:Redshift Connection:
+# ============================================================================
+USER_PARAMETERS eyJwYXJhbWV0ZXJzIjpbeyJjaG9pY2VTZXR0aW5ncyI6eyJjaG9pY2VTZXQiOiJkYkNvbm5lY3Rpb25zIiwiZm9ybWF0IjoiUkVEU0hJRlQifSwiZGVmYXVsdFZhbHVlIjoiQW1hem9uUmVkc2hpZnREVyIsIm5hbWUiOiJTb3VyY2VEYXRhc2V0X1JFRFNISUZUXzMiLCJwcm9tcHQiOiJDb25uZWN0aW9uOiIsInJlcXVpcmVkIjp0cnVlLCJ0eXBlIjoiZHJvcGRvd24iLCJ2YWx1ZVR5cGUiOiJzdHJpbmdFbmNvZGVkIn1dfQ==
+# ============================================================================
+INCLUDE [ if {{$(SourceDataset_REDSHIFT_3)} == {}} { puts_real {Parameter 'SourceDataset_REDSHIFT_3' must be given a value.}; exit 1; }; ]
+#! START_HEADER
+#! START_WB_HEADER
+READER_TYPE MULTI_READER
+MULTI_READER_TYPE{0} REDSHIFT
+MULTI_READER_KEYWORD{0} REDSHIFT_1
+MULTI_READER_GEN_DIRECTIVES{0} EXPOSE_ATTRS_GROUP,,READ_TIME_WITH_TIMEZONE,Yes,REDSHIFT_EXPOSE_FORMAT_ATTRS,,_MERGE_SCHEMAS,YES,ADVANCED,,QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS,Yes,SCHEMAS_FOR_TABLE_LISTING,,NAMED_CONNECTION,AmazonRedshiftDW,TABLELIST,public.eb_assets<space>public.eb_groups<space>public.eb_org_names<space>public.eb_sites<space>public.eb_tsdata,FEATURES_PER_FETCH,10000
+WRITER_TYPE NULL
+WRITER_KEYWORD NULL_DEST
+NULL_DEST_DATASET null
+#! END_WB_HEADER
+#! START_WB_HEADER
+MACRO WB_KEYWORD "REDSHIFT_1"
+#! END_WB_HEADER
+#! START_SOURCE_HEADER REDSHIFT REDSHIFT_1
+# The dataset this mapping file was generated from was:
+#! END_SOURCE_HEADER
+#! START_WB_HEADER
+DEFAULT_MACRO SourceDataset
+INCLUDE [ if {{$(SourceDataset)} != ""} {                        \
+ puts {DEFAULT_MACRO SourceDataset_REDSHIFT_1 $(SourceDataset)}     \
+ } ]
+#! END_WB_HEADER
+#! START_SOURCE_HEADER REDSHIFT REDSHIFT_1
+DEFAULT_MACRO SourceDataset_REDSHIFT_1 $(SourceDataset_REDSHIFT_3)
+GUI NAMED_DB_CONNECTION_ENCODED SourceDataset_REDSHIFT_1 FMT:REDSHIFT Connection:
+DEFAULT_MACRO REDSHIFT_IN_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS_REDSHIFT_1 Yes
+REDSHIFT_1_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS "$(REDSHIFT_IN_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS_REDSHIFT_1)"
+DEFAULT_MACRO REDSHIFT_IN_READ_TIME_WITH_TIMEZONE_REDSHIFT_1 Yes
+REDSHIFT_1_READ_TIME_WITH_TIMEZONE "$(REDSHIFT_IN_READ_TIME_WITH_TIMEZONE_REDSHIFT_1)"
+DEFAULT_MACRO REDSHIFT_IN_FME_CONNECTION_GROUP_REDSHIFT_1 
+GUI OPTIONAL DISCLOSUREGROUP REDSHIFT_IN_FME_CONNECTION_GROUP_REDSHIFT_1 REDSHIFT_IN_NAMED_CONNECTION%REDSHIFT_IN_SCHEMAS_FOR_TABLE_LISTING_REDSHIFT_1 Database Connection
+DEFAULT_MACRO REDSHIFT_IN_EXPOSE_ATTRS_GROUP_REDSHIFT_1
+REDSHIFT_1_EXPOSE_ATTRS_GROUP "$(REDSHIFT_IN_EXPOSE_ATTRS_GROUP_REDSHIFT_1)"
+DEFAULT_MACRO REDSHIFT_IN_ADVANCED_REDSHIFT_1 
+GUI OPTIONAL DISCLOSUREGROUP REDSHIFT_IN_ADVANCED_REDSHIFT_1 REDSHIFT_IN_FEATURES_PER_FETCH_REDSHIFT_1 Advanced
+DEFAULT_MACRO REDSHIFT_IN_FEATURES_PER_FETCH_REDSHIFT_1 10000
+REDSHIFT_1_FEATURES_PER_FETCH "$(REDSHIFT_IN_FEATURES_PER_FETCH_REDSHIFT_1)"
+GUI FLOAT REDSHIFT_IN_FEATURES_PER_FETCH_REDSHIFT_1 Number Of Records To Fetch At A Time
+# ============================================================================
+DEFAULT_MACRO REDSHIFT_IN_ATTRIBUTE_READING_REDSHIFT_1 DEFLINE_ATTRS
+REDSHIFT_1_ATTRIBUTE_READING "$(REDSHIFT_IN_ATTRIBUTE_READING_REDSHIFT_1)"
+# ============================================================================
+REDSHIFT_1_GENERATE_FME_BUILD_NUM 21313
+=
+DEFAULT_MACRO REDSHIFT_IN_SCHEMAS_FOR_TABLE_LISTING_REDSHIFT_1 
+GUI OPTIONAL TEXT REDSHIFT_IN_SCHEMAS_FOR_TABLE_LISTING_REDSHIFT_1 Schemas for Tables:
+REDSHIFT_1_SCHEMAS_FOR_TABLE_LISTING $(REDSHIFT_IN_SCHEMAS_FOR_TABLE_LISTING_REDSHIFT_1)
+REDSHIFT_1_DATASET "$(SourceDataset_REDSHIFT_1)"
+#! END_SOURCE_HEADER
+#! START_WB_HEADER
+#! END_WB_HEADER
+#! END_HEADER
+
+LOG_FILENAME "$(FME_MF_DIR)eBench C data.log"
+LOG_APPEND NO
+LOG_FILTER_MASK -1
+LOG_MAX_FEATURES 200
+LOG_MAX_RECORDED_FEATURES 200
+FME_REPROJECTION_ENGINE FME
+FME_IMPLICIT_CSMAP_REPROJECTION_MODE Auto
+FME_GEOMETRY_HANDLING Enhanced
+FME_STROKE_MAX_DEVIATION 0
+FME_NAMES_ENCODING windows-1252
+DEFAULT_MACRO DATASET_KEYWORD_REDSHIFT_1 REDSHIFT_1
+# -------------------------------------------------------------------------
+
+REDSHIFT_1_READER_META_ATTRIBUTES fme_feature_type
+
+# -------------------------------------------------------------------------
+
+MULTI_READER_CONTINUE_ON_READER_FAILURE No
+
+# -------------------------------------------------------------------------
+
+MACRO WORKSPACE_NAME eBench C data
+MACRO FME_VIEWER_APP fmedatainspector
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * RoutingFactory   FACTORY_NAME "Router and Unexpected Input Remover"   COMMAND_PARM_EVALUATION SINGLE_PASS   MULTI_READER_KEYWORD $(DATASET_KEYWORD_REDSHIFT_1)   INPUT FEATURE_TYPE *    ROUTE REDSHIFT REDSHIFT_1::public.eb_assets multi_reader_keyword,$(DATASET_KEYWORD_REDSHIFT_1) TO FME_GENERIC ::public.eb_assets ALIAS_GEOMETRY    ROUTE REDSHIFT REDSHIFT_1::public.eb_tsdata multi_reader_keyword,$(DATASET_KEYWORD_REDSHIFT_1) TO FME_GENERIC ::public.eb_tsdata ALIAS_GEOMETRY    ROUTE REDSHIFT REDSHIFT_1::public.eb_sites multi_reader_keyword,$(DATASET_KEYWORD_REDSHIFT_1) TO FME_GENERIC ::public.eb_sites ALIAS_GEOMETRY    MERGE_INPUT Yes   OUTPUT ROUTED FEATURE_TYPE *
+REDSHIFT_1_MERGE_DEF REDSHIFT_1::public.eb_assets EXACT public.eb_assets DEFLINE redshift_type,redshift_none,redshift_sql_where_clause,,redshift_sql_statement,,id,int8,siteid,int8,org_id,int8,name,varchar<openparen>200<closeparen>,collection,varchar<openparen>200<closeparen>,level,varchar<openparen>200<closeparen>,type,varchar<openparen>200<closeparen>,energy,varchar<openparen>200<closeparen>,unit,varchar<openparen>200<closeparen>,stdunit,varchar<openparen>200<closeparen>,sitename,varchar<openparen>200<closeparen>,closed,varchar<openparen>200<closeparen>,alerts,int4,assetyype,varchar<openparen>200<closeparen>
+REDSHIFT_1_MERGE_DEF REDSHIFT_1::public.eb_tsdata EXACT public.eb_tsdata DEFLINE redshift_type,redshift_none,redshift_sql_where_clause,,redshift_sql_statement,,siteid,int8,name,varchar<openparen>200<closeparen>,datetime,timestamp,value,float8
+REDSHIFT_1_MERGE_DEF REDSHIFT_1::public.eb_sites EXACT public.eb_sites DEFLINE redshift_type,redshift_none,redshift_sql_where_clause,,redshift_sql_statement,,id,varchar<openparen>200<closeparen>,name,varchar<openparen>200<closeparen>,entities,varchar<openparen>200<closeparen>,meter,varchar<openparen>200<closeparen>,alerts,varchar<openparen>200<closeparen>
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME "public.eb_assets_REDSHIFT_1 Splitter"    INPUT FEATURE_TYPE public.eb_assets
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME "public.eb_sites_REDSHIFT_1 Splitter"    INPUT FEATURE_TYPE public.eb_sites
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME "public.eb_tsdata_REDSHIFT_1 Splitter"    INPUT FEATURE_TYPE public.eb_tsdata    OUTPUT FEATURE_TYPE public.eb_tsdata_REDSHIFT_1
+DEFAULT_MACRO WB_CURRENT_CONTEXT
+# -------------------------------------------------------------------------
+FACTORY_DEF {*} TeeFactory    FACTORY_NAME { Junction }    INPUT  FEATURE_TYPE public.eb_tsdata_REDSHIFT_1    OUTPUT { FEATURE_TYPE Junction_Output         }
+# -------------------------------------------------------------------------
+FACTORY_DEF {*} TeeFactory    FACTORY_NAME { Junction_2 }    INPUT  FEATURE_TYPE Junction_Output    OUTPUT { FEATURE_TYPE Junction_2_Output         }
+# -------------------------------------------------------------------------
+FACTORY_DEF {*} TestFactory    FACTORY_NAME { Tester }    INPUT  FEATURE_TYPE Junction_2_Output    TEST "@EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>siteid<closeparen>,Tester)" = 11865 ENCODED    BOOLEAN_OPERATOR { OR }    COMPOSITE_TEST_EXPR { "1" }    FEATURE_TABLE_SHIM_SUPPORT Yes    PRESERVE_FEATURE_ORDER { PER_OUTPUT_PORT }    OUTPUT { PASSED FEATURE_TYPE Tester_PASSED         }
+# -------------------------------------------------------------------------
+FACTORY_DEF {*} SortFactory    FACTORY_NAME { Sorter }    INPUT  FEATURE_TYPE Tester_PASSED    SORT_ALPHA_AS_UTF8 { YES }    FLUSH_WHEN_GROUPS_CHANGE { <Unused> }    SORT_BY { datetime NUMERIC ASCENDING }    OUTPUT { SORTED FEATURE_TYPE Sorter_SORTED          }
+# -------------------------------------------------------------------------
+FACTORY_DEF {*} TeeFactory    INPUT  FEATURE_TYPE Sorter_SORTED    OUTPUT { FEATURE_TYPE ChartGenerator_PROCESSED       fme_cg_chart_type "Bar"       fme_cg_chart_title ""       fme_cg_chart_setup "DATAATT;value;LABATT;datetime;COLOR;0,0,1;BAR_ORIENTATION;V;BAR_STACKING;NO;BAR_WIDTH;1.0"       fme_cg_x_label ""       fme_cg_y_label ""       fme_cg_multi_ds "NO"       fme_cg_legend "<Unused>"       fme_cg_legend_options "NO"       fme_cg_x_min ""       fme_cg_y_min ""       fme_cg_x_max ""       fme_cg_y_max ""       fme_cg_axes_lw "0.5"       fme_cg_axes_font "Arial<comma>12"       fme_cg_title_font "Arial<comma>12"       fme_cg_legend_font "<Unused>"       fme_cg_tick_font "Arial<comma>10"       fme_cg_background_color "1<comma>1<comma>1"       fme_cg_ticks "T"       fme_cg_x_log "LIN"       fme_cg_y_log "LIN"       fme_cg_x_label_angle "Horizontal<space><openparen>0<closeparen>"       fme_cg_y_label_angle "Horizontal<space><openparen>0<closeparen>"       fme_cg_data_series ""       fme_cg_xtick_interval "<Unused>"       fme_cg_ytick_interval "<Unused>"       fme_cg_x_inch   "2.0"       fme_cg_y_inch  "2.0"       fme_cg_dpi "300" }
+FACTORY_DEF {*} PythonFactory    FACTORY_NAME { ChartGenerator }    FLUSH_WHEN_GROUPS_CHANGE { <Unused> }    INPUT { FEATURE_TYPE ChartGenerator_PROCESSED }    PYTHON_NAMESPACE FMEOBJECTS    SYMBOL_NAME chartgenerator.ChartGenerator
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * RoutingFactory FACTORY_NAME "Destination Feature Type Routing Correlator"   COMMAND_PARM_EVALUATION SINGLE_PASS   INPUT FEATURE_TYPE *   FEATURE_TYPE_ATTRIBUTE __wb_out_feat_type__   OUTPUT ROUTED FEATURE_TYPE *    OUTPUT NOT_ROUTED FEATURE_TYPE __nuke_me__ @Tcl2("FME_StatMessage 818059 [FME_GetAttribute fme_template_feature_type] 818060 818061 fme_warn")
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory   FACTORY_NAME "Final Output Nuker"   INPUT FEATURE_TYPE __nuke_me__
+
